@@ -1,5 +1,5 @@
 fn main() {
-    exercise_3();
+    exercise_4();
 }
 
 
@@ -45,4 +45,11 @@ fn exercise_3() {
 
 
     println!("exercise_3 Success!");
+}
+
+fn exercise_4() {
+    // Fix the error
+    let _arr = [1, 2, 3];
+
+    println!("excercise_4 Success!");
 }
