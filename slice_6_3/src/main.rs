@@ -45,3 +45,33 @@ fn exercise_4() {
 
     println!("Success!");
 }
+
+fn exercise_5() {
+    let s: &str = "你好，世界";
+    // Modify this line to make the code work
+    let slice: &str = &s[0..3];
+
+    assert!(slice == "你");
+
+    println!("Success!");
+}
+
+
+// Fix errors
+//  &String can be implicitly converted into &str.
+fn exercise_6() {
+    let mut s: String = String::from("hello world");
+
+    // Here, &s is `&String` type, but `first_letter` needs a `&str` type.
+    // It works because `&String` can be implicitly converted to `&str. If you want to know more, this is called `Deref coercion`. 
+    let letter: &str = first_letter(&s);
+    
+     println!("the first letter is: {}", letter);
+
+    s.clear(); // error!
+
+   
+}
+fn first_letter(s: &str) -> &str {
+    &s[..1]
+}
