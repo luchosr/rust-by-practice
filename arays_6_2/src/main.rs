@@ -1,5 +1,5 @@
 fn main() {
-    exercise_4();
+    exercise_5();
 }
 
 
@@ -52,4 +52,14 @@ fn exercise_4() {
     let _arr = [1, 2, 3];
 
     println!("excercise_4 Success!");
+}
+
+fn exercise_5() {
+    let arr = ['a', 'b', 'c'];
+    
+    let ele = arr[0]; // Only modify this line to make the code work!
+
+    assert!(ele == 'a');
+
+    println!("excercise_5 Success!");
 }
