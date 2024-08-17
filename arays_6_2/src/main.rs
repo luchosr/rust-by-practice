@@ -1,5 +1,5 @@
 fn main() {
-    exercise_2();
+    exercise_3();
 }
 
 
@@ -31,4 +31,18 @@ fn exercise_2(){
     assert!(std::mem::size_of_val(&arr) == 12);
 
     println!("exercise_2 Success!");
+}
+
+
+fn exercise_3() {
+
+    //All elements in an array can be initialized to the same value at once.
+    // Fill the blank
+    let list: [i32; 100] = [1;100] ;
+
+    assert!(list[0] == 1);
+    assert!(list.len() == 100);
+
+
+    println!("exercise_3 Success!");
 }
