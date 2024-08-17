@@ -1,5 +1,5 @@
 fn main() {
-    exercise_1();
+    exercise_2();
 }
 
 
@@ -28,7 +28,7 @@ fn exercise_2(){
     // Fill the blank
     // Arrays are stack allocated, `std::mem::size_of_val` returns the bytes which an array occupies
     // A char takes 4 bytes in Rust: Unicode char
-    assert!(std::mem::size_of_val(&arr) == __);
+    assert!(std::mem::size_of_val(&arr) == 12);
 
-    println!("Success!");
+    println!("exercise_2 Success!");
 }
